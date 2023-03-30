@@ -13,7 +13,7 @@ const useCounter = (fowards = true) => {
     }, 1000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [fowards]);
 
   return counter;
 };
